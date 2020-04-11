@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-repeat: repeat;
+	background-color: purple;
+	color: #FFF;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 20px;
+}
+
+header {
+	position: relative;
+	top: 20px;
+	width: 600px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+header p, footer p {
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+footer {
+	position: relative;
+	width: 600px;
+	margin: 65px auto 0;
+	text-align: center;
+}
+
+
+.hidden { 
+	display: none 
+}
+
+#game-boards { 
+	width: 100%; 
+	text-align: center; 
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+
+.instruments-container, .puzzle-board {
+	margin-top: 40px;
+	height: 400px;
+	display: inline-block;
+	border: medium solid #333;
+	background-color: #000;
+	color: inherit;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.instruments-container { 
+	width: 600px;  
+	display: flex;
+	flex-direction: row;
+}
+
+.instrument {
+	display: flex;
+	flex-direction: column;
+}
+
+.puzzle-board { 
+	width: 600px; 
+	display: flex;
+	flex-direction: row;
+	}
+
+.instrument-image {
+	width: 60%;
+	height: 80%;
+	cursor: pointer;
+}
+
+
+.drop-area img {
+	width: 99.9%;
+	height: 99.9%;
+	padding: 0 !important;
+	cursor: default;
+	border-radius: 6px;
+	
+}
+
+
+.drop-area{
+	width: 24.6%;
+	height: 99.9%;
+	border: thin solid grey;
+	float: right;
+	position: relative;
+	border-radius: 6px;
+}
+
+#buttonHolder { margin: 0px auto; text-align: center; }
+
+#buttonHolder img {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	border: thin solid #333;
+	cursor: pointer;
+	width: 150px;
+	height: 100px;
+}
+
+#buttonHolder img:hover { 
+	opacity: .5; 
+}
+
+
+
+
+
+
+button {
+  font-size: 16px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.controllers { 
+	display: block; 
+	margin-top: 8px; 
+	text-align: center; 
+}
