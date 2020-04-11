@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Music Mixer</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header id="headLine">
+		<h1 class="hidden">Music Mixer Project</h1>
+		<h2>Music Mixer</h2>
+	</header>
+
+	<section id="game-boards">
+		<h2 class="hidden">The Game Board</h2>
+
+		<div class="instruments-container"> <!-- these are the draggable instruments -->
+			<h3 class="hidden">Drag Area</h3>
+			<div class="instrument">
+				<img  src="images/outrun.jpg" alt="top left" class="instrument-image">
+
+				<div class="controller">
+     				<button class="playButton" data-trackref="Bass_1">Play</button>
+      				<button class="pauseButton">Pause</button>
+      				<button class="rwButton">Rewind</button>
+    			</div>
+			</div>
+
+			<div class="instrument">
+				<img  src="images/outrun.jpg" alt="top left" class="instrument-image">
+
+				<div class="controller">
+     				<button class="playButton" data-trackref="Electric_Drum_1">Play</button>
+      				<button class="pauseButton">Pause</button>
+      				<button class="rwButton">Rewind</button>
+    			</div>
+			</div>
+
+			<div class="instrument">
+				<img  src="images/outrun.jpg" alt="top left" class="instrument-image">
+
+				<div class="controller">
+     				<button class="playButton" data-trackref="Hero_Guitar_1">Play</button>
+      				<button class="pauseButton">Pause</button>
+      				<button class="rwButton">Rewind</button>
+    			</div>
+			</div>
+
+			<div class="instrument">
+				<img  src="images/outrun.jpg" alt="top left" class="instrument-image">
+
+				<div class="controller">
+     				<button class="playButton" data-trackref="Synth_1">Play</button>
+      				<button class="pauseButton">Pause</button>
+      				<button class="rwButton">Rewind</button>
+    			</div>
+			</div>
+		</div>
+
+		<br>
+		<p>Drag items from above and drop them in the boxes below.</p>
+
+		<div class="puzzle-board"><!-- these are the drop areas -->
+			<h3 class="hidden">Drop Area</h3>
+			<div class="drop-area"></div>
+			<div class="drop-area"></div>
+			<div class="drop-area"></div>
+			<div class="drop-area"></div>
+		</div>
+	</section>
+
+
+
+	<footer>
+		<p>Change Instruments Here!</p>
+		<nav id="buttonHolder">
+			<h3 class="hidden">Select Image</h3>
+			<img data-puzzleindex="0" src="images/outrunCity0.jpg" alt="thumbnail">
+			<img data-puzzleindex="1" src="images/outrunCity1.jpg" alt="thumbnail">
+	    	<img data-puzzleindex="2" src="images/outrunCity2.jpg" alt="thumbnail">
+		</nav>
+	</footer>
+
+
+	<script src="js/app.js"></script>
+</body>
+</html>
